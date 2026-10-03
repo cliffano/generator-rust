@@ -1,0 +1,15 @@
+---
+package_name: generator-rust
+author: Cliffano Subagio
+generator:
+  component: rust-lib-partials
+  inputs:
+    project_id: rust-lib
+    project_name: Rust Lib
+    project_desc: Rust Lib project description
+    author_name: Cliffano Subagio
+    author_email: blah@cliffano.com
+    author_url: https://github.com/cliffano
+    github_id: cliffano
+    github_repo: generator-rust
+    github_token_prefix: STUDIO

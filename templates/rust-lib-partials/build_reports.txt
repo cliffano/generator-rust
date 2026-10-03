@@ -1,0 +1,6 @@
+Build reports:
+
+* [Code complexity report](https://{{github_id}}.github.io/{{github_repo}}/complexity/)
+* [Test coverage report](https://{{github_id}}.github.io/{{github_repo}}/coverage/index.html)
+* [API Documentation](https://{{github_id}}.github.io/{{github_repo}}/doc/doc/{{snakecase project_id}}/index.html)
+

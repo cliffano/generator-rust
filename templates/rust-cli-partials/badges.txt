@@ -1,0 +1,6 @@
+[![Build Status](https://github.com/{{github_id}}/{{github_repo}}/workflows/CI/badge.svg)](https://github.com/{{github_id}}/{{github_repo}}/actions?query=workflow%3ACI)
+[![Dependencies Status](https://img.shields.io/librariesio/release/cargo/{{project_id}})](https://libraries.io/cargo/{{project_id}})
+[![Code Scanning Status](https://github.com/{{github_id}}/{{github_repo}}/workflows/CodeQL/badge.svg)](https://github.com/{{github_id}}/{{github_repo}}/actions?query=workflow%3ACodeQL)
+[![Coverage Status](https://coveralls.io/repos/github/{{github_id}}/{{github_repo}}/badge.svg?branch=main)](https://coveralls.io/r/{{github_id}}/{{github_repo}}?branch=main)
+[![Security Status](https://snyk.io/test/github/{{github_id}}/{{github_repo}}/badge.svg)](https://snyk.io/test/github/{{github_id}}/{{github_repo}})
+[![Published Version](https://img.shields.io/crates/v/{{project_id}}.svg)](https://crates.io/crates/{{project_id}})

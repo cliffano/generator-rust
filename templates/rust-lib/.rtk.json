@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {
+      "path": "Cargo.toml",
+      "type": "toml",
+      "params": {
+        "property": "package.version"
+      }
+    },
+    {
+      "path": "CHANGELOG.md",
+      "type": "keep-a-changelog"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+---
+name: Upgrade Dependencies
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: $\{{ secrets.{{github_token_prefix}}_GITHUB_TOKEN }}
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo update
+      - uses: cliffano/save-changes-action@v2.0.0
+        with:
+          message: "Upgrade dependencies to latest"
+          github_token: $\{{ secrets.{{github_token_prefix}}_GITHUB_TOKEN }}

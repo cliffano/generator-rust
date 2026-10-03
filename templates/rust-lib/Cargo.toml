@@ -1,0 +1,17 @@
+[package]
+name = "{{project_id}}"
+version = "0.1.0-pre.0"
+edition = "2024"
+description = "{{project_desc}}"
+authors = ["{{author_name}} <{{author_email}}>"]
+license = "MIT"
+repository = "https://github.com/{{github_id}}/{{github_repo}}"
+homepage = "https://github.com/{{github_id}}/{{github_repo}}"
+
+[lib]
+name = "{{snakecase project_id}}"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"

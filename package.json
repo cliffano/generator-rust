@@ -1,0 +1,9 @@
+{
+  "name": "plop-generator-rust",
+  "version": "0.1.0-pre.0",
+  "type": "module",
+  "description": "",
+  "devDependencies": {
+    "plop": "4.0.5"
+  }
+}

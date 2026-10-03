@@ -1,0 +1,23 @@
+---
+name: CI
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          set-safe-directory: $\{{ github.workspace }}
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+      - run: make deps
+      - run: make ci
+      - uses: coverallsapp/github-action@v2.3.6
+        with:
+          github-token: $\{{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: stage/gh-pages/coverage/lcov.info
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: $\{{ secrets.{{github_token_prefix}}_GITHUB_TOKEN }}
+          publish_dir: stage/gh-pages

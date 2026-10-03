@@ -1,0 +1,24 @@
+---
+name: Publish Crate
+'on':
+  push:
+    tags:
+      - '*'
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+      - run: make deps
+      - run: make clean lint test build
+      - uses: rust-lang/crates-io-auth-action@v1
+        id: auth
+      - run: cargo publish --locked
+        env:
+          CARGO_REGISTRY_TOKEN: $\{{ steps.auth.outputs.token }}
