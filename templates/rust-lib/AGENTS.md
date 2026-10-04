@@ -53,6 +53,7 @@ project/
 ├── CHANGELOG.md              # Changelog file following Keep a Changelog format
 ├── clippy.toml                # Clippy configuration
 ├── rustfmt.toml               # rustfmt configuration
+├── rust-toolchain.toml         # Pins the toolchain channel (rustup fetches/uses it automatically)
 ├── Cargo.toml                 # Crate manifest
 ├── crust.yml                  # Crust configuration
 ├── LICENSE                    # License file

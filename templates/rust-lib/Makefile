@@ -9,7 +9,7 @@ CRUST_VERSION = 0.1.0-pre.0
 UPDATE_GH_ID = cliffano
 UPDATE_MAKEFILE = crust
 UPDATE_GENERATOR = rust
-UPDATE_DOTFILES = .github/. rustfmt.toml clippy.toml .rtk.json .yamllint .gitignore AGENTS.md
+UPDATE_DOTFILES = .github/. rust-toolchain.toml rustfmt.toml clippy.toml .rtk.json .yamllint .gitignore AGENTS.md
 UPDATE_PARTIALS = AVATAR BADGES BUILD_REPORTS DEVELOPERS_GUIDE
 
 ################################################################
