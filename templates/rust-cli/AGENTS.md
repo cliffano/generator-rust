@@ -17,7 +17,7 @@ This document outlines the common conventions that apply across the Rust project
 
 ## Rust Version & Dependencies
 
-- **Rust Edition**: 2024
+- **Rust Edition**: 2021
 - **Dependency Manager**: Cargo
 - **Lock File**: `Cargo.lock` (checked in — this is a binary crate, so the lockfile must be tracked for reproducible builds)
 - **Dependency Specification**: `Cargo.toml`
@@ -55,7 +55,6 @@ project/
 ├── CHANGELOG.md              # Changelog file following Keep a Changelog format
 ├── clippy.toml                # Clippy configuration
 ├── rustfmt.toml               # rustfmt configuration
-├── rust-toolchain.toml         # Pins the toolchain channel (rustup fetches/uses it automatically)
 ├── Cargo.toml                 # Crate manifest
 ├── Cargo.lock                 # Locked dependencies (tracked for binary crates)
 ├── crust.yml                  # Crust configuration
