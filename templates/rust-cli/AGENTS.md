@@ -209,7 +209,7 @@ pub fn new(conf_file: impl AsRef<Path>) -> std::io::Result<Self> {
 - Propagate errors with `?` rather than matching and re-wrapping by hand
 - Map external error types into `std::io::Error` (or a crate-local error enum, for larger projects) at the boundary where they're first encountered
 
-#### Documentation
+#### Code Documentation
 
 Add doc comments (`///` for items, `//!` for modules) to all public items:
 
