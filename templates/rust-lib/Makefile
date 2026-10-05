@@ -241,4 +241,4 @@ release-patch:
 
 ################################################################
 
-.PHONY: all ci stage clean deps deps-extra-apt deps-upgrade rmdeps style lint complexity test test-integration test-examples coverage package publish doc update-to-latest update-to-main update-to-version update-dotfiles update-partials release-major release-minor release-patch
+.PHONY: $(1) all ci stage clean deps deps-extra-apt deps-upgrade rmdeps style lint complexity test test-integration test-examples coverage package publish doc update-to-latest update-to-main update-to-version update-dotfiles update-partials release-major release-minor release-patch
