@@ -8,6 +8,10 @@ jobs:
       - uses: actions/checkout@v7
         with:
           token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+      - uses: jlumbroso/free-disk-space@v2
+        with:
+          tool-cache: false
+          docker-images: false
       - uses: actions/setup-node@v7
         with:
           node-version: '26'
@@ -16,7 +20,7 @@ jobs:
       - uses: cliffano/command-docker-action@v2.0.0
         with:
           image: cliffano/studio:4.0.0
-          command: 'make update-piemaker-to-latest'  
+          command: 'make update-crust-to-latest'
       - uses: cliffano/command-docker-action@v2.0.0
         with:
           image: cliffano/studio:4.0.0

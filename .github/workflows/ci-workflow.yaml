@@ -8,6 +8,10 @@ jobs:
       - uses: actions/checkout@v7
         with:
           set-safe-directory: ${{ github.workspace }}
+      - uses: jlumbroso/free-disk-space@v2
+        with:
+          tool-cache: false
+          docker-images: false
       - uses: cliffano/command-docker-action@v2.0.0
         with:
           image: cliffano/studio:4.0.0
