@@ -18,6 +18,7 @@ jobs:
           github-token: $\{{ secrets.GITHUB_TOKEN }}
           path-to-lcov: stage/gh-pages/coverage/lcov.info
       - uses: peaceiris/actions-gh-pages@v4
+        if: github.event_name != 'pull_request'
         with:
           github_token: $\{{ secrets.{{github_token_prefix}}_GITHUB_TOKEN }}
           publish_dir: stage/gh-pages
